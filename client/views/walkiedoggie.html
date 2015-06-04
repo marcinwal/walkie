@@ -1,0 +1,21 @@
+<head>
+  <title>WalkieDoggie</title>
+</head>
+
+<body>
+  <h2 class="title nav navbar-nav nabar-left">Welcome to WalkieDoggie</h2>        
+  <ul class="nav navbar-nav navbar-right loginButtons">
+          {{> loginButtons}}
+  </ul>
+  <container class="test">
+    {{> hello}}
+  </container>
+</body>
+
+<template name="hello">
+  <br/>
+  <p>You've pressed the button {{counter}} times.</p>
+  <button>Click Me</button>
+</template>
+
+
