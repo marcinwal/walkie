@@ -1,0 +1,46 @@
+<!-- <head>
+  <title>WalkieDoggie</title>
+</head>
+
+<body>
+  <h2 class="title nav navbar-nav nabar-left">Welcome to WalkieDoggie</h2>        
+  <ul class="nav navbar-nav navbar-right loginButtons">
+          {{> loginButtons}}
+  </ul>
+  <container class="test">
+    {{> hello}}
+  </container>
+</body>
+
+<template name="hello">
+  <br/>
+  <p>You've pressed the button {{counter}} times.</p>
+  <button>Click Me</button>
+</template> -->
+
+
+<template name="header">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      {{#linkTo route='home' class="navbar-brand titleWalkieDoggie"}}WalkieDoggie{{/linkTo}}
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+        <li class="{{isActiveRoute 'about'}}">
+          {{#linkTo route="about"}}About{{/linkTo}}
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right loginButtons">
+        {{> loginButtons}}
+        <!-- here -->
+      </ul>
+    </div>    
+  </nav>
+</template>
