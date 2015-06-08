@@ -1,0 +1,19 @@
+<body>
+  <h1>Input Dog Walker details</h1>
+  {{>addWalkerFrom}}
+</body>
+
+<template name="addWalkerForm">
+  {{#if walker}}
+    <form>
+      <input type="text" name="walkerName">
+      <input type="text" name="walkerSurname">
+      <input type="text" name="walkerAddress1">        
+      <input type="text" name="walkerAddress2">        
+      <input type="text" name="postCode">        
+      <input type="text" name="walkerComments">
+      <input type="img" name="walkerPhoto">
+      <input type="button" value="addDogWalker"> 
+    </form>
+  {{/if}}
+</template>
