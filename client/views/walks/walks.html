@@ -1,0 +1,23 @@
+<body>
+  <h1>Input Walk details</h1>
+  {{>addWalkForm}}
+</body>
+
+<template name="addOwnerForm">
+  {{#if walk}}
+    <form>
+      <input type="text" name="ownerName">
+      <input type="text" name="ownerSurname">
+      <input type="text" name="ownerAddress1">        
+      <input type="text" name="ownerAddress2">        
+      <input type="text" name="postCode">        
+      <input type="text" name="dogName">        
+      <input type="text" name="dogBreed">
+      <input type="text" name="dogAge">
+      <input type="text" name="dogComments">
+      <input type="img" name="dogPhoto">
+      <input type="img" name="ownerPhoto">
+      <input type="button" value="addDogOwner">           
+    </form>
+  {{/if}}
+</template>
